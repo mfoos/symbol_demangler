@@ -10,11 +10,12 @@ When reviewing gene lists in Excel, the program overzealously autoconverts certa
 * Excel also interprets RIKEN identifiers with numbers and an "E" (i.e. 2310009E13) as scientific notation numeric
 * Genes "MARCH1" and "MARC1" are both converted into the same date (there may be other examples)
 * Human, mouse and other organism genomes likely do not use 100% of the same gene names.
+* Detecting conversion errors is a challenge unto itself (I'm not sure if conversion will always be to 5-digit Excel Serial format, or if it sometimes will be MONTH-hyphen-DAY)
 
 ### References
 
-[Excel and R](http://r.789695.n4.nabble.com/Difference-in-numeric-Dates-between-Excel-and-R-td3330769.html)
-[Leap year error](https://support.microsoft.com/en-us/help/214326/excel-incorrectly-assumes-that-the-year-1900-is-a-leap-year)
-[readxl date logic](https://github.com/tidyverse/readxl/blob/master/src/utils.h)
-[Existing software solution](http://blogs.nature.com/naturejobs/2017/02/27/escape-gene-name-mangling-with-escape-excel/)
-[MS Office Markup Language References](https://www.ecma-international.org/publications/standards/Ecma-376.htm)
+[Excel and R](http://r.789695.n4.nabble.com/Difference-in-numeric-Dates-between-Excel-and-R-td3330769.html)  
+[Leap year error](https://support.microsoft.com/en-us/help/214326/excel-incorrectly-assumes-that-the-year-1900-is-a-leap-year)    
+[readxl date logic](https://github.com/tidyverse/readxl/blob/master/src/utils.h)  
+[Existing software solution](http://blogs.nature.com/naturejobs/2017/02/27/escape-gene-name-mangling-with-escape-excel/)  
+[MS Office Markup Language References](https://www.ecma-international.org/publications/standards/Ecma-376.htm)  
